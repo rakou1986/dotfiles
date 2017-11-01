@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/nsm/.vim'
+let g:netrw_dirhist_2='/home/nsm/svn/feeeed.sakura.ne.jp/trunk/2ch-archives/application/resource/templates'
+let g:netrw_dirhist_3='/var/www/static'
+let g:netrw_dirhist_4='/etc/freeradius'
+let g:netrw_dirhist_5='/home/nsm/tmp/nsm@old.company/git/fullflex-zg/web/fullflex_zg/models'

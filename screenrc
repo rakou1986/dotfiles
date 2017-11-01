@@ -1,0 +1,30 @@
+defencoding UTF-8
+encoding UTF-8 UTF-8
+defkanji UTF-8
+
+# screenにコマンドを与えるモードを^Z（Ctrl+Z）で開始し、
+# ^Yを入力するためのキーを^Y^Yに設定する。
+# デフォルトは^Aaで、^Aを入力するためには^Aを押してaを押さなければならなかった。
+# シェルで行頭へ移動するための^Aと重なるので。
+escape ^Yy
+
+vbell off
+
+defbce on
+
+autodetach on
+bell_msg "^G"
+defscrollback 20000
+startup_message off
+
+bind ^Y next
+bind ^U prev
+bind ^L windowlist
+bind l windowlist
+bind ^N screen
+bind n screen
+bind s
+
+#tera termでは使い物にならない
+#caption splitonly
+#caption string "%{= wb} %-w%{=bu dr}%n %t%{-}%+w %= %{=b wk} [%l] %{=b wb}%y/%m/%d(%D) %{=b wm}%c"
