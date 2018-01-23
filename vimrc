@@ -63,6 +63,13 @@ function! GlobalSetting(colorscheme)
     "set guifont=Osaka－等幅:h12
     "set lines=48
     "set columns=83
+
+    "複数行ペーストでインデントが崩壊しないうえにセミコロンが消えない設定
+    set paste
+
+    " osc52.vim
+    vmap <C-c> y:call SendViaOSC52(getreg('"'))<cr>
+
 endfunction!
 
 
