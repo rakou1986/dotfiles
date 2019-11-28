@@ -103,3 +103,7 @@ autocmd FileType python call PythonSetting()
 autocmd FileType jinja call HTMLSetting()
 
 call GlobalSetting('ron')
+
+"bufferlist.vim
+map <silent> ; :call BufferList()<CR>
+hi BufferNormal term=NONE ctermfg=white ctermbg=black cterm=NONE
